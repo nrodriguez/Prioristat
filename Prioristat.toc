@@ -1,0 +1,8 @@
+## Interface: 70000
+## Title: Prioristat
+## Notes: Displays the stat priorities for your given spec as told by online resources
+## Author: JustNeph
+## Version: 0.0.1
+
+embeds.xml
+Core.lua

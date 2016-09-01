@@ -16,5 +16,19 @@ end
 
 
 function Prioristat:CreateFrame()
-  local f = AceGUI:Create("Frame")
+  local f = AceGUI:Create("Window") -- "InlineGroup" is also good
+  f:SetFullWidth(true)
+  f:SetFullHeight(true) -- probably?
+  f:SetLayout("Fill") -- important!
+  f:SetWidth(300)
+  f:SetHeight(100)
+  f:EnableResize(true)
+
+  local statsFrame = AceGUI:Create("Heading")
+  statsFrame:SetText("Click Me!")
+  statsFrame:SetWidth(200)
+  f:AddChild(statsFrame)
+
+
+  print(f)
 end
